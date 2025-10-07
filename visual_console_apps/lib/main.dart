@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:visual_console_apps/views/diceRoller.dart';
+import 'package:visual_console_apps/views/guessView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Visual Console Apps',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -80,6 +81,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: [
               DiceRollerView(),
+              const SizedBox(height:20),
+              guessView()
             ],
           ),
         ),
